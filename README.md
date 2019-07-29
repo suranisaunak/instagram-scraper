@@ -1,25 +1,25 @@
 # instagram-scraper
 
-Instagram Scrape by Tag
+<br>Instagram Scrape by Tag
 
-NodeJS application for scraping posts from Instagram by hashtag without API access.
+<br>NodeJS application for scraping posts from Instagram by hashtag without API access.
 
 # Config
-Setup default tag and limit in `config/defaults.js`
+<br>Setup default tag and limit in `config/defaults.js`
     
-// VARIABLES
-INSTAGRAM_DEFAULT_HASHTAG: 'landscape',
+// VARIABLES <br>
+INSTAGRAM_DEFAULT_HASHTAG: 'landscape', <br>
 INSTAGRAM_DEFAULT_FIRST: 10
 <br>
-# Setup
-npm install
-npm start
+# Setup 
+<br>npm install
+<br>npm start
 <br>
 # Run Server
-http://localhost:3000
-For top most posts
+<br>http://localhost:3000
+<br>For top most posts
 <br>
-http://localhost:3000/<tag>
-For recent posts
+<br>http://localhost:3000/<tag>
+<br>For recent posts
 <br>
-http://localhost:3000/<tag>?recent=1
+<br>http://localhost:3000/<tag>?recent=1
