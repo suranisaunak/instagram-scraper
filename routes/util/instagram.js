@@ -62,20 +62,7 @@ module.exports = async function(_hashtag, _limit, _recent) {
                 .all(promises)
                 .then((results) => {
                     return results.map(r => {
-                        // console.log(r.data.graphql.shortcode_media);
-                        let data = r.data.graphql.shortcode_media;
-                        
-                        //response = await getUserData(r.data.graphql.shortcode_media.owner.username);
-                        
-                        //console.log(response.data.graphql);
-
-                        let ownerDetail = r.data.graphql.shortcode_media; //response.data;
-
-                        // let ownerDetail = {
-                        //     profile_pic_url: data.owner.profile_pic_url,
-                        //     username: data.owner.username,
-                        //     full_name: data.owner.full_name
-                        // }
+                        let ownerDetail = r.data.graphql.shortcode_media;
                         return Object.assign({}, _.find(posts, { 'id': data.id }), { owner: ownerDetail });
                     });
                 });
