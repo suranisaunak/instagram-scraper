@@ -73,13 +73,4 @@ module.exports = async function(_hashtag, _limit, _recent) {
         console.log("Error");
         return { err: error.message };
     }
-
-
-    // async function getUserData(username) {
-    //     response = await Axios.get(defaults.URL_INSTAGRAM_USER_DATA+ username + '?__a=1').then((results) => { 
-    //         console.log(results) 
-
-    //         return results;
-    //     });
-    // }
 }
